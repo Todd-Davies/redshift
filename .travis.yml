@@ -10,4 +10,5 @@ install:
   - sudo apt-get install -qq libgeoclue-dev
   - sudo apt-get install -qq libglib2.0-dev
   - sudo apt-get install -qq python3
+  - sudo apt-get install -qq libtool
 script: ./bootstrap && ./configure --enable-drm --enable-vidmode --enable-randr --enable-geoclue --enable-geoclue2 --enable-gui && make -j2 distcheck
